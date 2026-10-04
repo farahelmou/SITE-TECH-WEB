@@ -1,0 +1,278 @@
+/* adaptation */
+@media only screen and (max-width: 1200px) {
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+/* body css */
+.all 
+{
+    margin: 0;
+    padding: 0; 
+}
+
+/* video background */
+#background-video
+ {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+/* header */
+
+header
+{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    margin-bottom: 20px;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    color: white;
+
+
+}
+
+
+/* logo techplanet */
+.logo
+{
+    height: 40px;
+    width: 220px;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+.logo:hover {
+    opacity: 0.7; 
+  }
+
+
+/* navigation */
+.nav ul {
+    display: flex;
+    list-style: none;
+    margin-left: 290px;
+    padding: 0;
+}
+
+
+/* Style for each list item */
+.nav li {
+    display: inline-block;
+    margin-right: 80px;
+    position: relative;
+}
+.nav a.underline {
+    position: relative;
+}
+
+.nav a.underline::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000; 
+    transition: width 0.3s ease-in-out; 
+}
+
+.nav a.underline:hover::before {
+    width: 100%;
+}
+
+#loginButton
+{
+    border: solid 1px #3498db;
+    background-color: #3498db;
+    border-radius: 4px;
+    width: 90px;
+    height: 27px;
+    color: white;
+    text-align: center;
+    
+}
+#registerButton
+{
+    border: solid 1px #3498db;
+    background-color: #3498db;
+    border-radius: 4px;
+    width: 110px;
+    height: 27px;
+    color: white;
+    text-align: center;
+    margin-left: 100px;
+    margin-right: -30px;
+}
+
+
+/* Style for links */
+.nav a {
+    font-family: 'Arial', sans-serif;
+    text-decoration: none;
+    color:white; 
+    display: block;
+    font-size:  22px;
+}
+
+/* nav hover */
+.nav a:hover {
+    transform: scale(1.1); /* Zoom effect on hover */
+    transition: transform 0.2s ease-in-out;
+}
+
+/* section */
+.section
+{
+    margin-top: 0px;
+    display: block;
+}
+
+/* Information Section */
+.info
+{
+    padding: 10px; 
+    margin-top: -20px; 
+    text-align: justify; 
+    background-color: rgb(78, 78, 78);
+}
+.cs
+{
+    font-family: 'Poppins', sans-serif; 
+    font-size: 18px; 
+    color: #fff; 
+    line-height: 1.5; 
+    text-align: center;
+
+}
+.cs strong
+{
+    font-weight: bold;
+    color: #ffcc00; 
+}
+.cs ul
+{
+    list-style: disc;
+    padding-left: 20px;
+}
+.cs p
+{
+    margin-bottom: 15px; 
+    text-align: center;
+}
+
+/* all categories */
+.allcategories{display: block;}
+
+/* categories */
+.categories
+{
+    margin-top: 100px;
+    display: flex;
+    margin-left: 50px;
+}
+.ca
+{
+    display: block;
+    margin-left: 100px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0,15);
+    height: 270px;
+    width: 220px;
+    background-color: white;
+}
+/* books images */
+.cimg
+{
+    width: 160px;
+    height: 200px;
+    margin-left: 33px;
+    margin-top: 13px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.cimg:hover 
+{
+    transform: scale(1.1);
+}
+/* download button */
+.download-btn {
+    position: absolute;
+    background-color: rgb(53, 166, 28);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 60px;
+    margin-top: 16px;
+    width: 100px;
+    height: 30px;
+    font-family: 'Poppins', sans-serif;
+
+}
+.ca:hover .download-btn
+{
+    background-color: #0d6b13;
+}
+
+/* pagination */
+.pagination {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .pagination li {
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 80px;
+  }
+  
+  .pagination li:hover {
+    background-color: #333;
+  }
+  
+  .pagination .active {
+    background-color: #333;
+  }
+  .pagination a
+  {      
+        text-decoration: none;
+  }
+  
+
+/* footer */
+.footer
+{
+    background-color: #333;
+    width: 100%;
+    height: 105px;
+    margin-top: 30px;
+    color: #fff;
+    text-align: center;
+
+}
+.discover, .social-icons, .copyright {
+    margin-bottom: 2px;
+}
+/* icons */
+.icon img {
+    width: 30px; 
+    height: 30px;
+    margin: 0 10px;
+}

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../interface/css/interface.css">
+    <link rel="stylesheet" href="../interface/css/login.css">
+    <link rel="stylesheet" href="../interface/css/register.css">
+    <script src="../interface/javascript/script_login.js" defer></script>
+    <script src="../interface/javascript/script_register.js" defer></script>
+    <title>interface</title>
+</head>
+
+<!-- ****************************************************************************************************************************** -->
+<!-- login pop up -->
+<div class="login" id="loginPopup">
+    <form>
+    <div class="close-btn" id="closeButton" onclick="togglePopup('loginPopup')">&times;</div>
+    <div class="form">
+       <h2>Log in</h2>
+       <div class="form-element">
+           <label for="email">Email</label>
+           <input type="text" id="email" placeholder="enter email">
+       </div>
+       <div class="form-element">
+           <label for="password">Password</label>
+           <input type="password" id="password" placeholder="Enter password">
+       </div>
+       <div class="form-element">
+           <input type="checkbox" id="remember-me">
+           <label for="remember-me">Remember me</label>
+       </div>
+       <div class="form-element">
+           <button type="reset">Sign in</button>
+       </div>
+       <div class="form-element">
+           <a href="#" id="pass">Forgot password ?</a>
+       </div>
+       <div class="line">
+           <span class="or">or</span>
+       </div>
+       <!-- alternative login -->
+           <div class="alternative-login">
+               <button>
+                   <img id="g" src="../pictures/google.png" alt="Google" >
+                   <span class="txt"> Continue with Google</span>
+               </button>
+               <button>
+                   <img id="f" src="../pictures/facebook.png" alt="Facebook" >
+                  <span class="txt" id="t2"> Continue with Facebook</span>
+               </button >
+               <button>
+                   <img id="ap" src="../pictures/apple.png" alt="Facebook" >
+                  <span class="txt"> Continue with Apple</span>
+               </button>
+           </div>
+       </form>
+   </div>
+</div>
+
+
+
+<!-- ****************************************************************************************************************************** -->
+
+
+
+
+
+<!-- Register Pop-up -->
+<div class="custom-register-popup" id="customRegisterPopup">
+    <!-- close btn  -->
+    <div class="custom-close-btn" id="customCloseButton" onclick="toggleCustomRegisterPopup()">&times;</div>
+    <!-- form -->
+    <div class="custom-form">
+        <form>
+        <h2>Registre</h2>
+
+        <div class="custom-form-element">
+            <label for="customName">Full name</label>
+            <input type="text" id="customName" placeholder="Enter name">
+        </div>
+
+        <div class="custom-form-element">
+            <label for="customEmail">Email</label>
+            <input type="text" id="customEmail" placeholder="Enter email">
+        </div>
+
+        <div class="custom-form-element">
+            <label for="customPassword">Password</label>
+            <input type="password" id="customPassword" placeholder="Enter password">
+        </div>
+
+        <div class="custom-form-element">
+            <label for="customConfirmPassword">Confirm</label>
+            <input type="password" id="customConfirmPassword" placeholder="Confirm password">
+        </div>
+
+        <div class="custom-form-element">
+            <button type="reset">Register</button>
+        </div>
+
+        <div class="custom-line">
+            <span class="custom-or">or</span>
+        </div>
+        <!-- alternative login -->
+        <div class="alternative-login">
+            <button>
+                <img id="g" src="../pictures/google.png" alt="Google" >
+                <span class="txt"> Continue with Google</span>
+            </button>
+            <button>
+                <img id="f" src="../pictures/facebook.png" alt="Facebook" >
+               <span class="txt" id="t2"> Continue with Facebook</span>
+            </button >
+            <button>
+                <img id="ap" src="../pictures/apple.png" alt="Facebook" >
+               <span class="txt"> Continue with Apple</span>
+            </button>
+            </div>
+    </form>
+    </div>
+</div>
+
+<!-- ****************************************************************************************************************************** -->
+<body class="all" id="body">
+        <!-- Header -->
+        <header class="header">
+            <div><a href="interface.html"><img class="logo" src="../pictures/logo.png"></a></div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="interface.html" id="nv" class="underline">Home</a></li>
+                    <li><a href="../../contactus/contacus.html" id="nv" class="underline">Contact Us</a></li>
+                    <li><a href="../../aboutus/aboutus.html" id="nv" class="underline">About Us</a></li>
+                    <li><a href="#" id="registerButton" onclick="toggleRegister()">Registre</a></li>
+                    <li><a href="#" id="loginButton" onclick="toggleLogin()">Login</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Section -->
+        <section class="section">
+            <!-- Join Us -->
+            <div class="join">
+                <!-- Text -->
+                <div class="registration-section">
+                    <h1>Unlock Your Potential with Online Learning</h1>
+                    <p>Explore a world of knowledge at your fingertips. Join our community today!<br>
+                        Get unlimited access to 700+ learning programs to help you start your career.</p>
+                    <div class="registration-buttons">
+                        <a id="1" href="#" class="register-button">JOIN US!!!!</a>
+                    </div>
+                </div>
+                <!-- Image -->
+                <div class="jimg"><img src="../pictures/1.png" alt=""></div>
+            </div>
+
+            <!-- Partner Division -->
+            <div class="partner">
+                <br>
+                <a href="../../partners/partner.html" class="partext" target="_blank">We collaborate with <span class="spanp"> 400+ leading universities and companies</span></a>
+                <div class="partmg"><img src="../pictures/partners.png" alt=""></div>
+            </div>
+
+            <!-- Categories -->
+            <div class="top-categories">Top Categories</div>
+            <div class="categories">
+                <!-- CS -->
+                <div class="ca">
+                    <a href="../../content/cybersecurity/cs.html">
+                        <div>
+                            <img class="cimg" src="../pictures/cs.png" alt="">
+                        </div>
+                    </a>
+                    <div class="ctext">Cyber Security</div>
+                </div>
+
+                 <!-- D.W -->
+                 <div class="ca">
+                    <a href="../../content/devweb/dw.html">
+                        <div><img class="cimg" src="../pictures/dw.png" alt=""></div>
+                    </a>
+                    <div class="ctext">Web Development</div>
+                </div>
+
+
+                <!-- A.I -->
+                <div class="ca">
+                    <a href="../../content/Artifical Intelligence/ai.html">
+                        <div><img class="cimg" src="../pictures/ai.png" alt=""></div>
+                    </a>
+                    <div class="ctext">A.I</div>
+                </div>
+
+            
+                <!-- PR -->
+                <div class="ca">
+                    <a href="../../content/coding/coding.html">
+                        <div><img class="cimg" src="../pictures/cod.png" alt=""></div>
+                    </a>
+                    <div class="ctext">Programing</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="discover">
+                <p>Discover Us In</p>
+            </div>
+            <div class="social-icons">
+                <a href="#" class="icon"><img src="../icons/fb.png" alt="Facebook"></a>
+                <a href="#" class="icon"><img src="../icons/tw.png" alt="Twitter"></a>
+                <a href="#" class="icon"><img src="../icons/ln.png" alt="LinkedIn"></a>
+                <a href="#" class="icon"><img src="../icons/ig.png" alt="Instagram"></a>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 TECHPLANET.  All Rights Reserved.</p>
+            </div>
+        </footer>
+   </body>
+</html>

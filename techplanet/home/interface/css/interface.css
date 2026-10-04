@@ -1,0 +1,285 @@
+.all
+{
+    background-color: rgb(239, 238, 237);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/* header */
+.header
+{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    margin-bottom: 20px;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    position: fixed;
+
+}
+
+
+/* logo techplanet */
+.logo
+{
+    height: 40px;
+    width: 220px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.logo:hover {
+    opacity: 0.7; 
+  }
+
+/* navigation */
+.nav ul {
+    display: flex;
+    list-style: none;
+    margin-left: 290px;
+    padding: 0;
+}
+
+
+/* Style for each list item */
+.nav li {
+    display: inline-block;
+    margin-right: 80px;
+    position: relative;
+}
+.nav a.underline {
+    position: relative;
+}
+
+.nav a.underline::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000; 
+    transition: width 0.3s ease-in-out; 
+}
+
+.nav a.underline:hover::before {
+    width: 100%;
+}
+
+#loginButton
+{
+    border: solid 1px #3498db;
+    background-color: #3498db;
+    border-radius: 4px;
+    width: 90px;
+    height: 27px;
+    color: white;
+    text-align: center;
+    
+}
+#registerButton
+{
+    border: solid 1px #3498db;
+    background-color: #3498db;
+    border-radius: 4px;
+    width: 110px;
+    height: 27px;
+    color: white;
+    text-align: center;
+    margin-left: 100px;
+    margin-right: -30px;
+}
+
+
+/* Style for links */
+.nav a {
+    font-family: 'Arial', sans-serif;
+    text-decoration: none;
+    color: #000; /* Black text color */
+    display: block;
+    font-size:  22px;
+}
+
+/* nav hover */
+.nav a:hover {
+    transform: scale(1.1); /* Zoom effect on hover */
+    transition: transform 0.2s ease-in-out;
+}
+
+/* section */
+.section
+{
+    margin-top: 70px;
+}
+/* join div */
+.join {
+    display: flex;
+    align-items: center; 
+    justify-content: flex-start; 
+    background-color: #d0cccc;
+    backdrop-filter: blur(10px);
+
+}
+
+/* join image */
+.join img {
+    width: 470px;
+    height: 300px;
+    margin-left: 200px;
+    margin-top: 10px;
+}
+
+/* join us text */
+.registration-section 
+{
+    text-align: left;
+    padding: 50px;
+}
+
+.registration-section h1 
+{
+    font-size: 32px;
+    margin-bottom: 13px;
+}
+
+.registration-section p
+{
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.registration-buttons 
+{
+    display: flex;
+    justify-content: left;
+}
+
+.register-button 
+{
+    padding: 10px 20px;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+    background-color: #3498db; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.register-button:hover
+{
+    background-color: #2980b9; 
+}
+
+
+/* partners div */
+.partner 
+{
+    display: block;
+    margin-top: 100px;
+    background-color: #d0cccc;
+
+}
+.partner a
+{
+    text-decoration: none;
+    color: #000000;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    font-size: 27px;
+    font-family: 'Arial', sans-serif;
+    margin-left: 370px;
+}
+
+
+/* span */
+.spanp{color: blue;}
+.partner .spanp:hover {
+    text-decoration: underline;
+}
+
+
+/* image partner */
+.partmg
+{
+    margin-left: 150px;
+}
+
+
+
+
+/* categories */
+.top-categories 
+{
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+    margin-top: 50px;
+    font-family: sans-serif;
+}
+.categories
+{
+    margin-top: 60px;
+    display: flex;
+    margin-left: 100px;
+}
+.ca
+{
+    display: block;
+    margin-left: 100px;
+}
+
+.cimg
+{
+    width: 200px;
+    height: 200px;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+    border: solid 1px #3498db;
+    border-radius: 4px;
+    box-shadow: 2px 2px 5px 5px rgba(0,0,0,0,29);
+}
+
+.cimg:hover 
+{
+    transform: scale(1.1);
+}
+.ctext
+{
+    text-align: center;
+    font-size: 18px;
+    font-family: sans-serif;
+    margin-top: 14px;
+    font-weight: bold;
+
+}
+/* footer */
+.footer
+{
+    background-color: #333;
+    width: 100%;
+    height: 105px;
+    margin-top: 160px;
+    color: #fff;
+    text-align: center;
+
+}
+.discover, .social-icons, .copyright {
+    margin-bottom: 2px;
+}
+
+.icon img {
+    width: 30px; 
+    height: 30px;
+    margin: 0 10px;
+}
